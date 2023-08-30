@@ -623,6 +623,11 @@ footer .discribe__company {
   font-size: 14px;
   margin-bottom: 7px;
 }
+footer .discribe__all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .partners {
   color: #444;
@@ -652,7 +657,7 @@ footer .discribe__company {
   margin: 6px 6px 0 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   header {
     background-image: url(../image/Background.png);
     width: 768px;
@@ -901,5 +906,374 @@ footer .discribe__company {
     display: flex;
     flex-direction: column;
     margin-left: 69px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header {
+    width: 320px;
+    height: 540px;
+    background-image: url(../image/Background1.png);
+    background-repeat: no-repeat;
+    margin: 0 0 0 5px;
+  }
+  .logo {
+    align-self: center;
+    padding-top: 97px;
+    padding-left: 13px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .autorization {
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 68px;
+  }
+  .autorization__log_in {
+    padding: 2px 10px 0 0;
+    margin: 0 0 0 0;
+  }
+  .autorization__sing_up {
+    margin: 0 0 0 0;
+    padding: 1px 0 0 16px;
+  }
+  .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7px 0 0 8px;
+  }
+  .head-text__large {
+    width: 272px;
+    font-size: 30px;
+  }
+  .head-text__small {
+    width: 280px;
+    height: 49px;
+    font-size: 18px;
+    padding: 5px 0 0 1px;
+    text-align: center;
+  }
+  .head-text__button {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+    margin: 20px 0 0 3px;
+    padding: 1px 0 0 1px;
+  }
+  main {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .box-works {
+    margin: 0 auto;
+    padding-top: 34px;
+  }
+  .works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+  }
+  .works div {
+    width: 300px;
+    height: 240px;
+    border-radius: 4px;
+  }
+  .works__fs__gradient, .works__sd__gradient, .works__th__gradient {
+    padding: 0 0 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .works__step {
+    padding: 5px 0 0 14px;
+  }
+  .works__text-large {
+    line-height: 14px;
+  }
+  .works__text-small {
+    width: 250px;
+    height: 57px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .works__fs {
+    background-image: url(../image/Object1_1.png);
+  }
+  .works__sd {
+    background-image: url(../image/Object2_2.png);
+  }
+  .works__sd .works__step {
+    padding: 5px 0 0 12px;
+  }
+  .works__sd .works__text-large {
+    width: 250px;
+    height: 29px;
+    margin-top: 16px;
+    padding-top: 14px;
+  }
+  .works__sd .works__text-small {
+    padding: 5px 0 0 0;
+    margin-top: 18px;
+  }
+  .works__th {
+    background-image: url(../image/Object3_3.png);
+  }
+  .works__th__gradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  }
+  .works__th .works__step {
+    padding: 5px 0 0 12px;
+  }
+  .works__fs .works__text-large, .works__th .works__text-large {
+    margin-top: 22px;
+  }
+  .works__fs .works__text-small, .works__th .works__text-small {
+    margin-top: 14px;
+  }
+  .box-partners {
+    padding-top: 36px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box-partners .title {
+    width: 280px;
+    height: 54px;
+    padding: 0;
+    margin: 0;
+  }
+  .box-partners button {
+    width: 280px;
+    height: 40px;
+    margin-top: 16px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+  .partner {
+    padding: 0;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .partner__fs, .partner__sd {
+    margin-top: 16px;
+  }
+  .partner__fs .name, .partner__sd .name {
+    margin-top: 19px;
+  }
+  .partner__fs .discribe, .partner__sd .discribe {
+    margin-top: 23px;
+  }
+  .partner__th, .partner__fr {
+    width: 221px;
+    height: 225px;
+    margin-top: 14px;
+  }
+  .partner__th .name, .partner__fr .name {
+    margin-top: 19px;
+  }
+  .partner__th .discribe, .partner__fr .discribe {
+    margin-top: 22px;
+  }
+  .partner__fs {
+    margin-right: 0;
+  }
+  .partner__fs .avatar {
+    margin-left: 0;
+  }
+  .partner__sd {
+    margin-right: 0;
+  }
+  .partner__sd .avatar {
+    margin-left: 0;
+  }
+  .partner__sd .back__icon {
+    margin-left: 1px;
+    margin-bottom: 2px;
+  }
+  .partner__sd .discribe {
+    margin-top: 22px;
+  }
+  .partner__th {
+    margin-right: 1px;
+  }
+  .partner__th .back__icon {
+    margin-bottom: 3px;
+  }
+  .partner__th .discribe {
+    margin-left: 0;
+    padding: 5px 0 0 0;
+  }
+  .partner__fr {
+    margin-top: 15px;
+  }
+  .partner__fr .avatar {
+    margin-right: 1px;
+  }
+  .partner__fr .back__icon {
+    margin-left: 3px;
+    margin-bottom: 1px;
+  }
+  .partner__fr .name {
+    padding: 0;
+  }
+  .partner__fr .discribe {
+    margin-left: 0;
+    padding: 0 0 0 0;
+  }
+  .box-holidays {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-holidays .title {
+    width: 280px;
+    height: 54px;
+    text-align: center;
+  }
+  .holiday {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 0;
+  }
+  .holiday__fs, .holiday__sd, .holiday__th, .holiday__fr, .holiday__sv, .holiday__ft, .holiday__sx {
+    width: 300px;
+    height: 120px;
+  }
+  .holiday__fs {
+    background-image: url(../image/holiday1_11.png);
+  }
+  .holiday__sd {
+    background-image: url(../image/holiday2_22.png);
+  }
+  .holiday__sd p {
+    width: 206px;
+    height: 54px;
+  }
+  .holiday__th {
+    background-image: url(../image/holiday3_33.png);
+  }
+  .holiday__fr {
+    background-image: url(../image/holiday4_44.png);
+  }
+  .holiday__ft {
+    background-image: url(../image/holiday5_55.png);
+  }
+  .holiday__sx {
+    background-image: url(../image/holiday6_66.png);
+  }
+  .holiday__sv {
+    background-image: url(../image/holiday7_77.png);
+  }
+  .create-holiday {
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+  }
+  .create-holiday .title {
+    width: 230px;
+    margin: 0;
+  }
+  .discribe-small {
+    width: 100%;
+    height: 24px;
+    padding-left: 2px;
+    margin-top: 19px;
+  }
+  .search {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1px;
+    padding-right: 2px;
+    margin-top: 4px;
+  }
+  .search__term {
+    width: 280px;
+    height: 40px;
+    margin: 0 0 0 0;
+    padding: 4px 14px 0 14px;
+  }
+  .search__button {
+    width: 280px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    padding: 1px 0 0 12px;
+  }
+  footer {
+    width: 320px;
+    height: 226px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0 0;
+    gap: 0;
+  }
+  footer .logo {
+    padding: 0 0 0 1px;
+  }
+  footer .discribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 9px;
+  }
+  footer .discribe__company {
+    color: #444;
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    margin-bottom: 6px;
+    padding-bottom: 0;
+    height: 17px;
+  }
+  footer .discribe__all {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+  }
+  .partners {
+    margin: 5px 1px 0 0;
+  }
+  .designed {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin: 9px 0 0 5px;
+  }
+  .designed__by {
+    text-align: center;
+    margin: 4px 0 0 0;
+    padding-right: 3px;
+  }
+  .designed__icon {
+    margin: 6px 6px 0 0;
   }
 }/*# sourceMappingURL=main.css.map */
