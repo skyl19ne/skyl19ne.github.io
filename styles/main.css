@@ -135,6 +135,11 @@ body {
   font-family: "Roboto-Light";
   src: url(./base/fonts/Roboto/Roboto-Light.ttf);
 }
+body {
+  font-style: normal;
+  line-height: normal;
+}
+
 header {
   background-image: url(../image/Background.png);
   width: 1440px;
@@ -218,17 +223,17 @@ main {
   margin: 0 auto;
 }
 
+.box-works {
+  margin: 0 auto;
+  padding-top: 89px;
+}
+
 .title {
   color: #444;
   text-align: center;
   font-family: "Montserrat-Bold";
   font-size: 26px;
   margin-left: 0.5px;
-}
-
-.box-works {
-  margin: 0 auto;
-  padding-top: 89px;
 }
 
 .works {
@@ -246,7 +251,6 @@ main {
   border-radius: 4px;
 }
 .works__fs__gradient, .works__sd__gradient, .works__th__gradient {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
   padding: 0 0 5px 25px;
   display: flex;
   flex-direction: column;
@@ -280,8 +284,14 @@ main {
 .works__fs {
   background-image: url(../image/Object1.png);
 }
+.works__fs__gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
 .works__sd {
   background-image: url(../image/Object2.png);
+}
+.works__sd__gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
 }
 .works__sd .works__step {
   padding: 5px 0 0 13px;
@@ -313,7 +323,7 @@ main {
   padding-left: 3px;
 }
 .box-partners button {
-  width: 180px;
+  width: 182px;
   height: 40px;
   border-radius: 40px;
   border: 2px solid #FF4E50;
@@ -324,7 +334,7 @@ main {
   font-size: 14px;
   margin-top: 35px;
   margin-left: 3px;
-  padding-left: 3px;
+  padding-left: 4px;
   padding-top: 2px;
 }
 
@@ -346,7 +356,7 @@ main {
   margin-top: 18px;
 }
 .partner__fs .name, .partner__sd .name {
-  margin-top: 17px;
+  margin-top: 19px;
 }
 .partner__fs .discribe, .partner__sd .discribe {
   margin-top: 23px;
@@ -357,17 +367,17 @@ main {
   margin-top: 35px;
 }
 .partner__th .name, .partner__fr .name {
-  margin-top: 18px;
+  margin-top: 19px;
 }
 .partner__th .discribe, .partner__fr .discribe {
   margin-top: 27px;
 }
 .partner__fs {
-  margin-right: 20px;
+  margin-right: 19px;
 }
 .partner__fs .avatar {
   background-image: url(../image/Bitmap1.png);
-  margin-left: 2px;
+  margin-left: 0;
 }
 .partner__fs .back {
   background-color: #FF4E50;
@@ -387,6 +397,8 @@ main {
 }
 .partner__sd .back__icon {
   background-image: url(../image/brush.png);
+  margin-right: 1px;
+  margin-bottom: 1px;
 }
 .partner__th {
   margin-right: 19px;
@@ -399,6 +411,7 @@ main {
 }
 .partner__th .back__icon {
   background-image: url(../image/camera.png);
+  margin-bottom: 3px;
 }
 .partner__th .discribe {
   margin-left: 9px;
@@ -410,13 +423,18 @@ main {
   background-color: #667DF3;
 }
 .partner__fr .back__icon {
-  background-image: url(../image/camera.png);
+  background-position: center;
+  background-image: url(../image/airplane.png);
+  width: 17px;
+  height: 16px;
+  margin-left: 3px;
+  margin-bottom: 1px;
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 119px;
+  height: 119px;
+  border-radius: 49%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 126px;
@@ -473,13 +491,11 @@ main {
   width: 300px;
   height: 310px;
   border-radius: 4px;
-  background-color: black;
 }
 .holiday__ft, .holiday__sx {
   width: 620px;
   height: 310px;
   border-radius: 4px;
-  background-color: black;
 }
 .holiday__fs {
   background-image: url(../image/holiday1.png);
@@ -564,7 +580,7 @@ main {
   padding: 4px 14px 0 14px;
 }
 .search__button {
-  width: 172.125px;
+  width: 173px;
   height: 40px;
   border-radius: 40px;
   background: #FF4E50;
@@ -634,4 +650,256 @@ footer .discribe__company {
   height: 24px;
   background-image: url(../image/icon.png);
   margin: 6px 6px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url(../image/Background.png);
+    width: 768px;
+    background-position: center;
+  }
+  .container {
+    padding: 40px 7px 40px 48px;
+  }
+  .autorization__log_in {
+    padding: 2px 20px 0 0;
+  }
+  .head-text__small {
+    padding: 28px 1px 0 0;
+  }
+  .head-text__button {
+    padding: 2px 0 0 1px;
+  }
+  main {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .box-works {
+    padding-top: 94px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .works {
+    gap: 20px;
+    padding-top: 35px;
+  }
+  .works div {
+    width: 236px;
+  }
+  .works__fs__gradient, .works__sd__gradient, .works__th__gradient {
+    padding: 0 0 0 20px;
+  }
+  .works__step {
+    padding: 5px 0 0 14px;
+  }
+  .works__text-large {
+    width: 196px;
+    height: 58px;
+    line-height: 14px;
+  }
+  .works__text-small {
+    width: 196px;
+    height: 76px;
+    padding-top: 5px;
+  }
+  .works__sd .works__step {
+    padding: 5px 0 0 13px;
+  }
+  .works__sd .works__text-small {
+    margin-top: 18px;
+    padding-top: 19px;
+  }
+  .works__sd .works__text-large {
+    width: 196px;
+    height: 29px;
+    margin-top: 2px;
+  }
+  .works__th .works__step {
+    padding: 5px 0 0 13px;
+  }
+  .works__fs .works__text-large, .works__th .works__text-large {
+    margin-top: 22px;
+    padding-top: 24px;
+  }
+  .works__fs .works__text-small, .works__th .works__text-small {
+    margin-top: 19px;
+  }
+  .box-partners {
+    padding-top: 94px;
+    width: 492px;
+  }
+  .box-partners .title {
+    padding-left: 0;
+    padding-right: 1px;
+  }
+  .box-partners button {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 180px;
+    padding-left: 5px;
+  }
+  .partner {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 26px 0 0 0;
+    margin: 0;
+    gap: 35px 19px;
+  }
+  .partner__fs, .partner__sd {
+    width: 236px;
+    height: 205px;
+    margin-top: 0;
+    padding-right: 1px;
+  }
+  .partner__fs .name, .partner__sd .name {
+    margin-top: 19px;
+  }
+  .partner__fs .discribe, .partner__sd .discribe {
+    margin-top: 22px;
+    width: 236px;
+    height: 38px;
+    text-align: center;
+  }
+  .partner__th, .partner__fr {
+    width: 236px;
+    height: 224px;
+    margin-top: 0;
+  }
+  .partner__th .name, .partner__fr .name {
+    margin-top: 19px;
+    padding-left: 2px;
+  }
+  .partner__th .discribe, .partner__fr .discribe {
+    margin-top: 0;
+    width: 236px;
+    height: 57px;
+    text-align: center;
+    margin-top: 2px;
+    padding-top: 20px;
+    padding-left: 1px;
+  }
+  .partner__fs {
+    margin-left: 0;
+    margin-right: 0;
+    order: 1;
+  }
+  .partner__fs .avatar {
+    margin-left: 0;
+  }
+  .partner__sd {
+    margin-right: 0;
+    order: 3;
+  }
+  .partner__sd .avatar {
+    margin-left: 0;
+  }
+  .partner__th {
+    margin-right: 0;
+    order: 2;
+  }
+  .partner__th .discribe {
+    margin-left: 0;
+    padding-top: 25px;
+  }
+  .partner__fr {
+    order: 4;
+  }
+  .box-holidays {
+    width: 748px;
+    padding-top: 94px;
+  }
+  .box-holidays .title {
+    margin: 0;
+  }
+  .holiday {
+    gap: 20px;
+    padding-top: 35px;
+  }
+  .holiday__fs, .holiday__sd, .holiday__th, .holiday__fr, .holiday__sv {
+    width: 236px;
+    height: 310px;
+  }
+  .holiday__ft, .holiday__sx {
+    width: 492px;
+    height: 310px;
+  }
+  .holiday__fs {
+    background-image: url(../image/holiday1_1.png);
+  }
+  .holiday__fs p {
+    width: 206px;
+    height: 54px;
+    margin-bottom: 26px;
+    padding-right: 1px;
+  }
+  .holiday__sd {
+    background-image: url(../image/holiday2_2.png);
+  }
+  .holiday__th {
+    background-image: url(../image/holiday3_3.png);
+  }
+  .holiday__fr {
+    background-image: url(../image/holiday4_4.png);
+  }
+  .holiday__ft {
+    background-image: url(../image/holiday5_5.png);
+  }
+  .holiday__sx {
+    background-image: url(../image/holiday6_6.png);
+  }
+  .holiday__sv {
+    background-image: url(../image/holiday7_7.png);
+  }
+  .holiday__text {
+    color: #FFF;
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+  }
+  .holiday .opasity {
+    padding-left: 0;
+  }
+  .create-holiday {
+    padding-left: 1px;
+  }
+  .create-holiday .title {
+    padding: 0;
+    margin: 0;
+    margin-left: 2.5px;
+    letter-spacing: 0.045px;
+  }
+  .search__button {
+    width: 172.98px;
+    height: 40px;
+    margin: 0 0 0 5px;
+    padding: 2px 0 0 4.5px;
+  }
+  footer {
+    width: 768px;
+    height: 244px;
+    padding: 34px 0 0 39px;
+    gap: 50px;
+  }
+  footer .discribe {
+    width: 114px;
+    margin-left: 58px;
+  }
+  footer .discribe a {
+    height: 26px;
+    text-align: start;
+  }
+  .partners {
+    color: #444;
+    font-family: "Montserrat-Bold";
+    font-size: 14px;
+    margin: 4px 0 0 6px;
+  }
+  .designed {
+    display: flex;
+    flex-direction: column;
+    margin-left: 69px;
+  }
 }/*# sourceMappingURL=main.css.map */

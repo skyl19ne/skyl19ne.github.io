@@ -1,6 +1,10 @@
 @import 'base/base';
 @import 'base/fonts';
 
+body {
+    font-style: normal;
+    line-height: normal;
+}
 
 header {
     background-image: url(../image/Background.png);
@@ -93,18 +97,18 @@ main {
     margin: 0 auto;
 }
 
+.box-works {
+    margin: 0 auto;
+    padding-top: 89px;
+
+}
+
 .title {
     color: #444;
     text-align: center;
     font-family: "Montserrat-Bold";
     font-size: 26px;
     margin-left: 0.5px;
-}
-
-.box-works {
-    margin: 0 auto;
-    padding-top: 89px;
-
 }
 
 .works {
@@ -129,7 +133,6 @@ main {
     &__th {
 
         &__gradient {
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
             padding: 0 0 5px 25px;
             display: flex;
             flex-direction: column;
@@ -168,10 +171,18 @@ main {
     &__fs {
         background-image: url(../image/Object1.png);
 
+        &__gradient {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
+        }
+
     }
 
     &__sd {
         background-image: url(../image/Object2.png);
+
+        &__gradient {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 100%);
+        }
 
         .works__step {
             padding: 5px 0 0 13px;
@@ -220,7 +231,7 @@ main {
     }
 
     button {
-        width: 180px;
+        width: 182px;
         height: 40px;
         border-radius: 40px;
         border: 2px solid #FF4E50;
@@ -231,8 +242,9 @@ main {
         font-size: 14px;
         margin-top: 35px;
         margin-left: 3px;
-        padding-left: 3px;
+        padding-left: 4px;
         padding-top: 2px;
+
     }
 
 }
@@ -260,7 +272,7 @@ main {
         margin-top: 18px;
 
         .name {
-            margin-top: 17px;
+            margin-top: 19px;
         }
 
         .discribe {
@@ -275,7 +287,7 @@ main {
         margin-top: 35px;
 
         .name {
-            margin-top: 18px;
+            margin-top: 19px;
         }
 
         .discribe {
@@ -286,11 +298,11 @@ main {
     }
 
     &__fs {
-        margin-right: 20px;
+        margin-right: 19px;
 
         .avatar {
             background-image: url(../image/Bitmap1.png);
-            margin-left: 2px;
+            margin-left: 0;
 
 
         }
@@ -318,6 +330,8 @@ main {
 
             &__icon {
                 background-image: url(../image/brush.png);
+                margin-right: 1px;
+                margin-bottom: 1px;
             }
         }
     }
@@ -335,7 +349,7 @@ main {
 
             &__icon {
                 background-image: url(../image/camera.png);
-
+                margin-bottom: 3px;
             }
         }
 
@@ -355,16 +369,21 @@ main {
             ;
 
             &__icon {
-                background-image: url(../image/camera.png);
+                background-position: center;
+                background-image: url(../image/airplane.png);
+                width: 17px;
+                height: 16px;
+                margin-left: 3px;
+                margin-bottom: 1px;
             }
         }
     }
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 119px;
+    height: 119px;
+    border-radius: 49%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 126px;
@@ -427,7 +446,7 @@ main {
         width: 300px;
         height: 310px;
         border-radius: 4px;
-        background-color: black;
+
 
 
     }
@@ -437,7 +456,7 @@ main {
         width: 620px;
         height: 310px;
         border-radius: 4px;
-        background-color: black;
+
 
     }
 
@@ -539,7 +558,7 @@ main {
     }
 
     &__button {
-        width: 172.125px;
+        width: 173px;
         height: 40px;
         border-radius: 40px;
         background: #FF4E50;
@@ -600,7 +619,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 288px;
-    
+
 
     &__by {
         color: #CCC;
@@ -608,7 +627,7 @@ footer {
         font-size: 10px;
         letter-spacing: 1px;
         text-align: end;
-        margin:4px 0 0 0;
+        margin: 4px 0 0 0;
         padding-right: 3px;
     }
 
@@ -619,3 +638,391 @@ footer {
         margin: 6px 6px 0 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url(../image/Background.png);
+        width: 768px;
+        background-position: center;
+    }
+
+    .container {
+        padding: 40px 7px 40px 48px;
+    }
+
+
+    .autorization {
+        &__log_in {
+            padding: 2px 20px 0 0;
+        }
+    }
+
+    .head-text {
+
+        &__small {
+
+            padding: 28px 1px 0 0;
+
+        }
+
+        &__button {
+            padding: 2px 0 0 1px;
+
+        }
+
+    }
+
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .box-works {
+        padding-top: 94px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .works {
+        gap: 20px;
+        padding-top: 35px;
+
+        div {
+            width: 236px;
+
+        }
+
+        &__fs,
+        &__sd,
+        &__th {
+            &__gradient {
+                padding: 0 0 0 20px;
+            }
+        }
+
+        &__step {
+
+            padding: 5px 0 0 14px;
+        }
+
+        &__text-large {
+            width: 196px;
+            height: 58px;
+            line-height: 14px;
+        }
+
+        &__text-small {
+            width: 196px;
+            height: 76px;
+            padding-top: 5px;
+        }
+
+
+
+        &__sd {
+
+            .works__step {
+                padding: 5px 0 0 13px;
+
+            }
+
+            .works__text-small {
+                margin-top: 18px;
+                padding-top: 19px;
+            }
+
+
+            .works__text-large {
+                width: 196px;
+                height: 29px;
+                margin-top: 2px;
+            }
+        }
+
+        &__th {
+
+
+            .works__step {
+                padding: 5px 0 0 13px;
+            }
+
+        }
+
+        &__fs,
+        &__th {
+
+            .works__text-large {
+                margin-top: 22px;
+                padding-top: 24px;
+            }
+
+            .works__text-small {
+                margin-top: 19px;
+            }
+
+        }
+
+    }
+
+    .box-partners {
+        padding-top: 94px;
+        width: 492px;
+
+        .title {
+            padding-left: 0;
+            padding-right: 1px;
+        }
+
+        button {
+            margin-top: 30px;
+            margin-left: 0;
+            width: 180px;
+            padding-left: 5px;
+        }
+
+    }
+
+    .partner {
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 26px 0 0 0;
+        margin: 0;
+        gap: 35px 19px;
+
+
+        &__fs,
+        &__sd {
+            width: 236px;
+            height: 205px;
+            margin-top: 0;
+            padding-right: 1px;
+
+            .name {
+                margin-top: 19px;
+
+            }
+
+            .discribe {
+                margin-top: 22px;
+                width: 236px;
+                height: 38px;
+                text-align: center;
+            }
+        }
+
+        &__th,
+        &__fr {
+            width: 236px;
+            height: 224px;
+            margin-top: 0;
+
+            .name {
+                margin-top: 19px;
+                padding-left: 2px;
+            }
+
+            .discribe {
+                margin-top: 0;
+                width: 236px;
+                height: 57px;
+                text-align: center;
+                margin-top: 2px;
+                padding-top: 20px;
+                padding-left: 1px;
+
+            }
+
+        }
+
+        &__fs {
+            margin-left: 0;
+            margin-right: 0;
+            order: 1;
+
+            .avatar {
+                margin-left: 0;
+
+            }
+        }
+
+        &__sd {
+            margin-right: 0;
+            order: 3;
+
+            .avatar {
+                margin-left: 0;
+
+            }
+        }
+
+
+        &__th {
+            margin-right: 0;
+            order: 2;
+
+            .discribe {
+                margin-left: 0;
+                padding-top: 25px;
+            }
+        }
+
+        &__fr {
+            order: 4;
+
+        }
+    }
+
+    .box-holidays {
+        width: 748px;
+        padding-top: 94px;
+
+        .title {
+            margin: 0;
+
+        }
+
+    }
+
+    .holiday {
+        gap: 20px;
+        padding-top: 35px;
+
+
+        &__fs,
+        &__sd,
+        &__th,
+        &__fr,
+        &__sv {
+            width: 236px;
+            height: 310px;
+
+
+
+        }
+
+        &__ft,
+        &__sx {
+            width: 492px;
+            height: 310px;
+
+
+
+        }
+
+        &__fs {
+            background-image: url(../image/holiday1_1.png);
+
+            p {
+                width: 206px;
+                height: 54px;
+                margin-bottom: 26px;
+                padding-right: 1px;
+            }
+
+        }
+
+        &__sd {
+            background-image: url(../image/holiday2_2.png);
+        }
+
+        &__th {
+            background-image: url(../image/holiday3_3.png);
+        }
+
+        &__fr {
+            background-image: url(../image/holiday4_4.png);
+        }
+
+        &__ft {
+            background-image: url(../image/holiday5_5.png);
+        }
+
+        &__sx {
+            background-image: url(../image/holiday6_6.png);
+        }
+
+        &__sv {
+            background-image: url(../image/holiday7_7.png);
+        }
+
+        &__text {
+            color: #FFF;
+            font-family: 'Montserrat-Bold';
+            font-size: 22px;
+        }
+
+        .opasity {
+            padding-left: 0;
+
+        }
+    }
+
+    .create-holiday {
+        padding-left: 1px;
+
+        .title {
+            padding: 0;
+            margin: 0;
+            margin-left: 2.5px;
+            letter-spacing: 0.045px;
+        }
+    }
+
+    .search {
+
+
+
+        &__button {
+            width: 172.98px;
+            height: 40px;
+            margin: 0 0 0 5px;
+            padding: 2px 0 0 4.5px;
+
+        }
+    }
+
+    footer {
+        width: 768px;
+        height: 244px;
+        padding: 34px 0 0 39px;
+        gap: 50px;
+
+
+        .discribe {
+            width: 114px;
+            margin-left: 58px;
+
+            a {
+                height: 26px;
+                text-align: start;
+            }
+        }
+    }
+
+    .partners {
+        color: #444;
+        font-family: 'Montserrat-Bold';
+        font-size: 14px;
+        margin: 4px 0 0 6px;
+    }
+
+    .designed {
+        display: flex;
+        flex-direction: column;
+        margin-left: 69px;
+
+
+    }
+
+}
+
+
+
+
+
+// @media screen and (max-width: 320px) {}
