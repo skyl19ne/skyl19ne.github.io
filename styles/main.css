@@ -908,7 +908,7 @@ footer .discribe__all {
     margin-left: 69px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   header {
     width: 320px;
     height: 540px;
