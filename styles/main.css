@@ -652,7 +652,7 @@ footer .discribe__company {
   margin: 6px 6px 0 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     background-image: url(../image/Background.png);
     width: 768px;
