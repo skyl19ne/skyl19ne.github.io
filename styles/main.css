@@ -1,0 +1,611 @@
+@charset "UTF-8";
+/***
+    The new CSS reset - version 1.9 (last updated 19.6.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(./base/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(./base/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(./base/fonts/Roboto/Roboto-Light.ttf);
+}
+header {
+  background-image: url(../image/Background.png);
+  width: 1440px;
+  height: 700px;
+  color: #FFF;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 40px 248px;
+}
+
+.logo {
+  padding-top: 6px;
+  font-size: 20px;
+  font-family: "Montserrat-Bold";
+}
+
+.autorization {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  padding-right: 43px;
+}
+.autorization__log_in {
+  cursor: pointer;
+  padding: 2px 19px 0 0;
+}
+.autorization__sing_up {
+  width: 90px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 1px 0 0 16px;
+  border: 2px solid #FFF;
+}
+
+.head-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 108px 0 0 1px;
+}
+.head-text__large {
+  width: 470px;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-size: 52px;
+}
+.head-text__small {
+  font-family: "Roboto-Light";
+  font-size: 24px;
+  font-weight: 300;
+  padding: 28px 0 0 0;
+  line-height: 24.5px;
+  color: #F7F3F2;
+}
+.head-text__button {
+  width: 225px;
+  height: 40px;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  border-radius: 40px;
+  background: #FF4E50;
+  margin: 33px 0 0 0;
+  padding: 3px 0 0 2px;
+}
+
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #444;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-size: 26px;
+  margin-left: 0.5px;
+}
+
+.box-works {
+  margin: 0 auto;
+  padding-top: 89px;
+}
+
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 35px;
+  color: #FFF;
+}
+.works div {
+  width: 300px;
+  height: 400px;
+  border-radius: 4px;
+}
+.works__fs__gradient, .works__sd__gradient, .works__th__gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  padding: 0 0 5px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.works__step {
+  width: 70px;
+  height: 20px;
+  font-family: "Montserrat-Regular";
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background: #FF4E50;
+  padding: 5px 0 0 14px;
+}
+.works__text-large {
+  width: 250px;
+  height: 58px;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  line-height: 26px;
+}
+.works__text-small {
+  width: 250px;
+  height: 57px;
+  color: #E3E3E3;
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 14px;
+}
+.works__fs {
+  background-image: url(../image/Object1.png);
+}
+.works__sd {
+  background-image: url(../image/Object2.png);
+}
+.works__sd .works__step {
+  padding: 5px 0 0 13px;
+}
+.works__sd .works__text-large {
+  margin-top: 10px;
+  padding-top: 14px;
+}
+.works__th {
+  background-image: url(../image/Object3.png);
+}
+.works__th .works__step {
+  padding: 5px 0 0 13px;
+}
+.works__fs .works__text-large, .works__th .works__text-large {
+  margin-top: 22px;
+}
+.works__fs .works__text-small, .works__th .works__text-small {
+  margin-top: 19px;
+}
+
+.box-partners {
+  margin: 0 auto;
+  padding-top: 89px;
+  width: 941px;
+  text-align: center;
+}
+.box-partners .title {
+  padding-left: 3px;
+}
+.box-partners button {
+  width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  border: 2px solid #FF4E50;
+  background: #FFF;
+  text-align: center;
+  color: #FF4E50;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  margin-top: 35px;
+  margin-left: 3px;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 941px;
+}
+.partner__fs, .partner__sd, .partner__th, .partner__fr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.partner__fs, .partner__sd {
+  width: 221px;
+  height: 205px;
+  margin-top: 18px;
+}
+.partner__fs .name, .partner__sd .name {
+  margin-top: 17px;
+}
+.partner__fs .discribe, .partner__sd .discribe {
+  margin-top: 23px;
+}
+.partner__th, .partner__fr {
+  width: 221px;
+  height: 225px;
+  margin-top: 35px;
+}
+.partner__th .name, .partner__fr .name {
+  margin-top: 18px;
+}
+.partner__th .discribe, .partner__fr .discribe {
+  margin-top: 27px;
+}
+.partner__fs {
+  margin-right: 20px;
+}
+.partner__fs .avatar {
+  background-image: url(../image/Bitmap1.png);
+  margin-left: 2px;
+}
+.partner__fs .back {
+  background-color: #FF4E50;
+}
+.partner__fs .back__icon {
+  background-image: url(../image/music.png);
+}
+.partner__sd {
+  margin-right: 19px;
+}
+.partner__sd .avatar {
+  background-image: url(../image/Bitmap2.png);
+  margin-left: 1px;
+}
+.partner__sd .back {
+  background-color: #19D4CA;
+}
+.partner__sd .back__icon {
+  background-image: url(../image/brush.png);
+}
+.partner__th {
+  margin-right: 19px;
+}
+.partner__th .avatar {
+  background-image: url(../image/Bitmap3.png);
+}
+.partner__th .back {
+  background-color: #FFA710;
+}
+.partner__th .back__icon {
+  background-image: url(../image/camera.png);
+}
+.partner__th .discribe {
+  margin-left: 9px;
+}
+.partner__fr .avatar {
+  background-image: url(../image/Bitmap4.png);
+}
+.partner__fr .back {
+  background-color: #667DF3;
+}
+.partner__fr .back__icon {
+  background-image: url(../image/camera.png);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 126px;
+  padding: 84px 0 0 84px;
+}
+
+.back {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.name {
+  width: 221px;
+  color: #444;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+}
+
+.discribe {
+  width: 221px;
+  color: #666;
+  text-align: center;
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.box-holidays {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 89px;
+  height: 100%;
+}
+
+.holiday {
+  display: flex;
+  align-content: flex-start;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 35px;
+}
+.holiday__fs, .holiday__sd, .holiday__th, .holiday__fr, .holiday__sv {
+  width: 300px;
+  height: 310px;
+  border-radius: 4px;
+  background-color: black;
+}
+.holiday__ft, .holiday__sx {
+  width: 620px;
+  height: 310px;
+  border-radius: 4px;
+  background-color: black;
+}
+.holiday__fs {
+  background-image: url(../image/holiday1.png);
+}
+.holiday__sd {
+  background-image: url(../image/holiday2.png);
+}
+.holiday__th {
+  background-image: url(../image/holiday3.png);
+}
+.holiday__fr {
+  background-image: url(../image/holiday4.png);
+}
+.holiday__ft {
+  background-image: url(../image/holiday5.png);
+}
+.holiday__sx {
+  background-image: url(../image/holiday6.png);
+}
+.holiday__sv {
+  background-image: url(../image/holiday7.png);
+}
+.holiday__text {
+  color: #FFF;
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+}
+
+.opasity {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  text-align: center;
+}
+
+.create-holiday {
+  width: 482px;
+  height: 158px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-top: 95px;
+}
+
+.discribe-small {
+  width: 415px;
+  height: 24px;
+  color: #666;
+  text-align: center;
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  line-height: 14px;
+  padding-left: 1px;
+  margin-top: 53px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-top: 1px;
+  padding-right: 2px;
+  margin-top: 24px;
+}
+.search__term {
+  width: 299px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #D4D4D4;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
+  color: #999;
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  margin: 0 5px 0 0;
+  padding: 4px 14px 0 14px;
+}
+.search__button {
+  width: 172.125px;
+  height: 40px;
+  border-radius: 40px;
+  background: #FF4E50;
+  color: #FFF;
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  font-size: 14px;
+  margin: 0 0 0 5px;
+  padding: 1px 0 0 4px;
+}
+
+footer {
+  width: 1440px;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-top: 2px solid #FF4E50;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 34px 0 0 249.5px;
+}
+footer .logo {
+  color: #FF4E50;
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  padding: 3px 0 0 0;
+}
+footer .discribe {
+  color: #999;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 122px;
+}
+footer .discribe__company {
+  color: #444;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.partners {
+  color: #444;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  margin: 4px 0 0 18px;
+}
+
+.designed {
+  display: flex;
+  flex-direction: column;
+  margin-left: 288px;
+}
+.designed__by {
+  color: #CCC;
+  font-family: "Montserrat-Bold";
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: end;
+  margin: 4px 0 0 0;
+  padding-right: 3px;
+}
+.designed__icon {
+  width: 110px;
+  height: 24px;
+  background-image: url(../image/icon.png);
+  margin: 6px 6px 0 0;
+}/*# sourceMappingURL=main.css.map */
