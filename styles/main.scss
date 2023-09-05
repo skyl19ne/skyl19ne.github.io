@@ -12,6 +12,23 @@ header {
     height: 700px;
     color: #FFF;
     margin: 0 auto;
+
+    a:link {
+        color: #FFF;
+    }
+
+    a:visited {
+        color: #FFF;
+    }
+
+    a:hover {
+        color: #FFF;
+    }
+
+    a:active {
+        color: #FFF;
+    }
+
 }
 
 button {
@@ -29,6 +46,8 @@ button {
     padding-top: 6px;
     font-size: 20px;
     font-family: 'Montserrat-Bold';
+    text-decoration: none;
+
 }
 
 .autorization {
@@ -40,16 +59,28 @@ button {
 
     &__log_in {
         cursor: pointer;
-        padding: 2px 19px 0 0;
+        padding: 2px 20px 0 0;
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: #FFF;
+        font-family: 'Montserrat-Regular';
+        font-size: 14px;
     }
 
     &__sing_up {
-
+        display: inline-block;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: #FFF;
+        font-family: 'Montserrat-Regular';
+        font-size: 14px;
         width: 90px;
         height: 36px;
         cursor: pointer;
         border-radius: 40px;
-        padding: 1px 0 0 16px;
+        padding: 1px 0 0 0;
         border: 2px solid #FFF;
     }
 }
@@ -87,6 +118,8 @@ button {
         background: #FF4E50;
         margin: 33px 0 0 0;
         padding: 3px 0 0 2px;
+        border: none;
+        color: #FFF;
 
     }
 
@@ -127,13 +160,11 @@ main {
     }
 
 
-
     &__fs,
     &__sd,
     &__th {
 
         &__gradient {
-            padding: 0 0 5px 25px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -141,8 +172,8 @@ main {
     }
 
     &__step {
-        width: 70px;
-        height: 20px;
+        width: 56px;
+        height: 15px;
         font-family: 'Montserrat-Regular';
         font-size: 10px;
         letter-spacing: 2px;
@@ -185,14 +216,25 @@ main {
         }
 
         .works__step {
-            padding: 5px 0 0 13px;
+            width: 58px;
+            padding: 5px 0 0 12px;
+            margin-left: 25px;
 
         }
 
         .works__text-large {
-            margin-top: 10px;
-            padding-top: 14px;
+            height: 29px;
+            margin-top: 24px;
+            margin-left: 25px;
 
+
+
+        }
+
+        .works__text-small {
+            margin-top: 15px;
+            margin-left: 25px;
+            margin-bottom: 5px;
         }
     }
 
@@ -200,20 +242,27 @@ main {
         background-image: url(../image/Object3.png);
 
         .works__step {
-            padding: 5px 0 0 13px;
+            width: 58px;
+            padding: 5px 0 0 12px;
         }
 
     }
 
     &__fs,
     &__th {
+        .works__step {
+            margin: 0 0 0 25px;
+        }
 
         .works__text-large {
             margin-top: 22px;
+            margin-left: 25px;
         }
 
         .works__text-small {
             margin-top: 19px;
+            margin-left: 25px;
+            margin-bottom: 5px;
         }
 
     }
@@ -231,9 +280,10 @@ main {
     }
 
     button {
-        width: 182px;
+        width: 180px;
         height: 40px;
         border-radius: 40px;
+        border: none;
         border: 2px solid #FF4E50;
         background: #FFF;
         text-align: center;
@@ -241,8 +291,8 @@ main {
         font-family: 'Montserrat-Bold';
         font-size: 14px;
         margin-top: 35px;
-        margin-left: 3px;
-        padding-left: 4px;
+        margin-left: 1px;
+        padding-left: 12px;
         padding-top: 2px;
 
     }
@@ -271,12 +321,9 @@ main {
         height: 205px;
         margin-top: 18px;
 
-        .name {
-            margin-top: 19px;
-        }
-
         .discribe {
-            margin-top: 23px;
+            margin-top: 22px;
+            margin-bottom: 1px;
         }
     }
 
@@ -286,9 +333,6 @@ main {
         height: 225px;
         margin-top: 35px;
 
-        .name {
-            margin-top: 19px;
-        }
 
         .discribe {
             margin-top: 27px;
@@ -299,6 +343,7 @@ main {
 
     &__fs {
         margin-right: 19px;
+        margin-left: 1px;
 
         .avatar {
             background-image: url(../image/Bitmap1.png);
@@ -321,7 +366,7 @@ main {
 
         .avatar {
             background-image: url(../image/Bitmap2.png);
-            margin-left: 1px;
+
 
         }
 
@@ -354,7 +399,7 @@ main {
         }
 
         .discribe {
-            margin-left: 9px;
+            margin-left: 10px;
         }
     }
 
@@ -381,27 +426,29 @@ main {
 }
 
 .avatar {
-    width: 119px;
-    height: 119px;
-    border-radius: 49%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 126px;
-    padding: 84px 0 0 84px;
 }
 
 .back {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     border: 4px solid #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 70%;
+    margin-left: 70%;
 
     &__icon {
         width: 16px;
         height: 16px;
+
     }
 }
 
@@ -411,6 +458,8 @@ main {
     text-align: center;
     font-family: 'Montserrat-Bold';
     font-size: 14px;
+    margin-top: 18px;
+    padding-right: 1px;
 }
 
 .discribe {
@@ -420,6 +469,7 @@ main {
     font-family: 'Roboto-Light';
     font-size: 14px;
     line-height: 14px;
+    padding-right: 1px;
 }
 
 .box-holidays {
@@ -427,6 +477,10 @@ main {
     margin: 0 auto;
     padding-top: 89px;
     height: 100%;
+
+    .title {
+        padding: 0 0 0 1px;
+    }
 }
 
 .holiday {
@@ -486,6 +540,10 @@ main {
 
     &__sv {
         background-image: url(../image/holiday7.png);
+
+        .opasity {
+            padding-left: 0;
+        }
     }
 
     &__text {
@@ -511,13 +569,14 @@ main {
 
 .create-holiday {
     width: 482px;
-    height: 158px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
-    margin-top: 95px;
+    margin-top: 89px;
+    .title{
+        padding-right: 1.5px;
+    }
 
 }
 
@@ -530,43 +589,44 @@ main {
     font-size: 18px;
     line-height: 14px;
     padding-left: 1px;
+    margin: 0 auto;
     margin-top: 53px;
-
 }
 
 .search {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    padding-top: 1px;
-    padding-right: 2px;
-    margin-top: 24px;
+    padding: 0;
+    margin-top: 15px;
 
     &__term {
-        width: 299px;
-        height: 40px;
+        width: 269px;
+        height: 34px;
         border-radius: 3px;
+        border: none;
         border: 1px solid #D4D4D4;
         background: #FFF;
         box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
         color: #999;
         font-family: 'Roboto-Light';
         font-size: 14px;
-        margin: 0 5px 0 0;
+        margin: 0 0 0 -1px;
+        padding: 0;
         padding: 4px 14px 0 14px;
 
     }
 
     &__button {
-        width: 173px;
+        width: 172.125px;
         height: 40px;
         border-radius: 40px;
         background: #FF4E50;
+        border: none;
         color: #FFF;
         font-family: 'Montserrat-Bold';
         text-align: center;
         font-size: 14px;
-        margin: 0 0 0 5px;
+        margin: 0 0 0 10px;
         padding: 1px 0 0 4px;
 
     }
@@ -574,14 +634,17 @@ main {
 
 footer {
     width: 1440px;
-    height: 260px;
     margin: 0 auto;
+}
+
+.foot {
+    height: 224px;
     margin-top: 100px;
     border-top: 2px solid #FF4E50;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding: 34px 0 0 249.5px;
+    padding: 34px 0 0 249px;
 
     .logo {
         color: #FF4E50;
@@ -605,10 +668,31 @@ footer {
             margin-bottom: 7px;
 
         }
-        &__all{
+
+        &__all {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
+            a {
+                text-decoration: none;
+            }
+
+            a:link {
+                color: #999;
+            }
+
+            a:visited {
+                color: #999;
+            }
+
+            a:hover {
+                color: #999;
+            }
+
+            a:active {
+                color: #999;
+            }
         }
     }
 }
@@ -617,7 +701,7 @@ footer {
     color: #444;
     font-family: 'Montserrat-Bold';
     font-size: 14px;
-    margin: 4px 0 0 18px;
+    margin: 4px 0 0 17px;
 }
 
 .designed {
@@ -1416,48 +1500,51 @@ footer {
         }
 
     }
+
     .create-holiday {
         width: 100%;
         height: 100%;
         margin-top: 35px;
-        .title{
+
+        .title {
             width: 230px;
             margin: 0;
         }
-    
+
     }
-    
+
     .discribe-small {
         width: 100%;
         height: 24px;
         padding-left: 2px;
         margin-top: 19px;
-    
+
     }
-    
+
     .search {
         flex-direction: column;
         align-items: center;
         padding-top: 1px;
         padding-right: 2px;
         margin-top: 4px;
-    
+
         &__term {
             width: 280px;
             height: 40px;
             margin: 0 0 0 0;
             padding: 4px 14px 0 14px;
-    
+
         }
-    
+
         &__button {
             width: 280px;
             height: 40px;
             margin: 10px 0 0 0;
             padding: 1px 0 0 12px;
-    
+
         }
     }
+
     footer {
         width: 320px;
         height: 226px;
@@ -1468,11 +1555,11 @@ footer {
         // justify-content: center;
         padding: 20px 0 0 0;
         gap: 0;
-    
+
         .logo {
             padding: 0 0 0 1px;
         }
-    
+
         .discribe {
             display: flex;
             flex-direction: column;
@@ -1480,8 +1567,8 @@ footer {
             justify-content: center;
             margin-left: 0;
             margin-top: 9px;
-            
-    
+
+
             &__company {
                 color: #444;
                 font-family: 'Montserrat-Bold';
@@ -1489,9 +1576,10 @@ footer {
                 margin-bottom: 6px;
                 padding-bottom: 0;
                 height: 17px;
-    
+
             }
-            &__all{
+
+            &__all {
                 width: 280px;
                 display: flex;
                 flex-direction: row;
@@ -1500,29 +1588,30 @@ footer {
                 align-content: stretch;
                 column-gap: 14px;
 
-                
+
             }
         }
     }
+
     .partners {
         margin: 5px 1px 0 0;
     }
-    
+
     .designed {
 
         display: flex;
         flex-direction: column;
         margin-left: 0;
         margin: 9px 0 0 5px;
-    
-    
+
+
         &__by {
 
             text-align: center;
             margin: 4px 0 0 0;
             padding-right: 3px;
         }
-    
+
         &__icon {
             margin: 6px 6px 0 0;
         }

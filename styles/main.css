@@ -196,6 +196,18 @@ header {
   color: #FFF;
   margin: 0 auto;
 }
+header a:link {
+  color: #FFF;
+}
+header a:visited {
+  color: #FFF;
+}
+header a:hover {
+  color: #FFF;
+}
+header a:active {
+  color: #FFF;
+}
 
 button {
   cursor: pointer;
@@ -212,6 +224,7 @@ button {
   padding-top: 6px;
   font-size: 20px;
   font-family: "Montserrat-Bold";
+  text-decoration: none;
 }
 
 .autorization {
@@ -223,14 +236,27 @@ button {
 }
 .autorization__log_in {
   cursor: pointer;
-  padding: 2px 19px 0 0;
+  padding: 2px 20px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
 }
 .autorization__sing_up {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
   width: 90px;
   height: 36px;
   cursor: pointer;
   border-radius: 40px;
-  padding: 1px 0 0 16px;
+  padding: 1px 0 0 0;
   border: 2px solid #FFF;
 }
 
@@ -265,6 +291,8 @@ button {
   background: #FF4E50;
   margin: 33px 0 0 0;
   padding: 3px 0 0 2px;
+  border: none;
+  color: #FFF;
 }
 
 main {
@@ -300,14 +328,13 @@ main {
   border-radius: 4px;
 }
 .works__fs__gradient, .works__sd__gradient, .works__th__gradient {
-  padding: 0 0 5px 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 .works__step {
-  width: 70px;
-  height: 20px;
+  width: 56px;
+  height: 15px;
   font-family: "Montserrat-Regular";
   font-size: 10px;
   letter-spacing: 2px;
@@ -343,23 +370,38 @@ main {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
 }
 .works__sd .works__step {
-  padding: 5px 0 0 13px;
+  width: 58px;
+  padding: 5px 0 0 12px;
+  margin-left: 25px;
 }
 .works__sd .works__text-large {
-  margin-top: 10px;
-  padding-top: 14px;
+  height: 29px;
+  margin-top: 24px;
+  margin-left: 25px;
+}
+.works__sd .works__text-small {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 5px;
 }
 .works__th {
   background-image: url(../image/Object3.png);
 }
 .works__th .works__step {
-  padding: 5px 0 0 13px;
+  width: 58px;
+  padding: 5px 0 0 12px;
+}
+.works__fs .works__step, .works__th .works__step {
+  margin: 0 0 0 25px;
 }
 .works__fs .works__text-large, .works__th .works__text-large {
   margin-top: 22px;
+  margin-left: 25px;
 }
 .works__fs .works__text-small, .works__th .works__text-small {
   margin-top: 19px;
+  margin-left: 25px;
+  margin-bottom: 5px;
 }
 
 .box-partners {
@@ -372,9 +414,10 @@ main {
   padding-left: 3px;
 }
 .box-partners button {
-  width: 182px;
+  width: 180px;
   height: 40px;
   border-radius: 40px;
+  border: none;
   border: 2px solid #FF4E50;
   background: #FFF;
   text-align: center;
@@ -382,8 +425,8 @@ main {
   font-family: "Montserrat-Bold";
   font-size: 14px;
   margin-top: 35px;
-  margin-left: 3px;
-  padding-left: 4px;
+  margin-left: 1px;
+  padding-left: 12px;
   padding-top: 2px;
 }
 
@@ -404,25 +447,21 @@ main {
   height: 205px;
   margin-top: 18px;
 }
-.partner__fs .name, .partner__sd .name {
-  margin-top: 19px;
-}
 .partner__fs .discribe, .partner__sd .discribe {
-  margin-top: 23px;
+  margin-top: 22px;
+  margin-bottom: 1px;
 }
 .partner__th, .partner__fr {
   width: 221px;
   height: 225px;
   margin-top: 35px;
 }
-.partner__th .name, .partner__fr .name {
-  margin-top: 19px;
-}
 .partner__th .discribe, .partner__fr .discribe {
   margin-top: 27px;
 }
 .partner__fs {
   margin-right: 19px;
+  margin-left: 1px;
 }
 .partner__fs .avatar {
   background-image: url(../image/Bitmap1.png);
@@ -439,7 +478,6 @@ main {
 }
 .partner__sd .avatar {
   background-image: url(../image/Bitmap2.png);
-  margin-left: 1px;
 }
 .partner__sd .back {
   background-color: #19D4CA;
@@ -463,7 +501,7 @@ main {
   margin-bottom: 3px;
 }
 .partner__th .discribe {
-  margin-left: 9px;
+  margin-left: 10px;
 }
 .partner__fr .avatar {
   background-image: url(../image/Bitmap4.png);
@@ -481,23 +519,24 @@ main {
 }
 
 .avatar {
-  width: 119px;
-  height: 119px;
-  border-radius: 49%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 126px;
-  padding: 84px 0 0 84px;
 }
 
 .back {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 4px solid #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 70%;
+  margin-left: 70%;
 }
 .back__icon {
   width: 16px;
@@ -510,6 +549,8 @@ main {
   text-align: center;
   font-family: "Montserrat-Bold";
   font-size: 14px;
+  margin-top: 18px;
+  padding-right: 1px;
 }
 
 .discribe {
@@ -519,6 +560,7 @@ main {
   font-family: "Roboto-Light";
   font-size: 14px;
   line-height: 14px;
+  padding-right: 1px;
 }
 
 .box-holidays {
@@ -526,6 +568,9 @@ main {
   margin: 0 auto;
   padding-top: 89px;
   height: 100%;
+}
+.box-holidays .title {
+  padding: 0 0 0 1px;
 }
 
 .holiday {
@@ -567,6 +612,9 @@ main {
 .holiday__sv {
   background-image: url(../image/holiday7.png);
 }
+.holiday__sv .opasity {
+  padding-left: 0;
+}
 .holiday__text {
   color: #FFF;
   font-family: "Montserrat-Bold";
@@ -586,13 +634,14 @@ main {
 
 .create-holiday {
   width: 482px;
-  height: 158px;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   justify-content: end;
-  align-items: center;
-  margin-top: 95px;
+  margin-top: 89px;
+}
+.create-holiday .title {
+  padding-right: 1.5px;
 }
 
 .discribe-small {
@@ -604,61 +653,66 @@ main {
   font-size: 18px;
   line-height: 14px;
   padding-left: 1px;
+  margin: 0 auto;
   margin-top: 53px;
 }
 
 .search {
   display: flex;
   flex-direction: row;
-  align-items: start;
-  padding-top: 1px;
-  padding-right: 2px;
-  margin-top: 24px;
+  padding: 0;
+  margin-top: 15px;
 }
 .search__term {
-  width: 299px;
-  height: 40px;
+  width: 269px;
+  height: 34px;
   border-radius: 3px;
+  border: none;
   border: 1px solid #D4D4D4;
   background: #FFF;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
   color: #999;
   font-family: "Roboto-Light";
   font-size: 14px;
-  margin: 0 5px 0 0;
+  margin: 0 0 0 -1px;
+  padding: 0;
   padding: 4px 14px 0 14px;
 }
 .search__button {
-  width: 173px;
+  width: 172.125px;
   height: 40px;
   border-radius: 40px;
   background: #FF4E50;
+  border: none;
   color: #FFF;
   font-family: "Montserrat-Bold";
   text-align: center;
   font-size: 14px;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 10px;
   padding: 1px 0 0 4px;
 }
 
 footer {
   width: 1440px;
-  height: 260px;
   margin: 0 auto;
+}
+
+.foot {
+  height: 224px;
   margin-top: 100px;
   border-top: 2px solid #FF4E50;
   display: flex;
   flex-direction: row;
   justify-content: start;
-  padding: 34px 0 0 249.5px;
+  padding: 34px 0 0 249px;
 }
-footer .logo {
+.foot .logo {
   color: #FF4E50;
   font-family: "Montserrat-Regular";
   font-size: 16px;
   padding: 3px 0 0 0;
 }
-footer .discribe {
+.foot .discribe {
   color: #999;
   line-height: 26px;
   display: flex;
@@ -666,23 +720,38 @@ footer .discribe {
   align-items: flex-start;
   margin-left: 122px;
 }
-footer .discribe__company {
+.foot .discribe__company {
   color: #444;
   font-family: "Montserrat-Bold";
   font-size: 14px;
   margin-bottom: 7px;
 }
-footer .discribe__all {
+.foot .discribe__all {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.foot .discribe__all a {
+  text-decoration: none;
+}
+.foot .discribe__all a:link {
+  color: #999;
+}
+.foot .discribe__all a:visited {
+  color: #999;
+}
+.foot .discribe__all a:hover {
+  color: #999;
+}
+.foot .discribe__all a:active {
+  color: #999;
 }
 
 .partners {
   color: #444;
   font-family: "Montserrat-Bold";
   font-size: 14px;
-  margin: 4px 0 0 18px;
+  margin: 4px 0 0 17px;
 }
 
 .designed {
