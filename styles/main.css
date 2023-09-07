@@ -810,8 +810,11 @@ footer {
   .works div {
     width: 236px;
   }
+  .works__fs, .works__sd, .works__th {
+    align-items: flex-end;
+  }
   .works__fs__gradient, .works__sd__gradient, .works__th__gradient {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0;
   }
   .works__step {
     padding: 5px 0 0 14px;
@@ -823,30 +826,36 @@ footer {
   }
   .works__text-small {
     width: 196px;
-    height: 76px;
-    padding-top: 5px;
+    height: 70px;
+    padding: 0;
   }
   .works__sd .works__step {
-    padding: 5px 0 0 13px;
+    padding: 5px 0 0 12px;
+    margin: 0px 0 16px 20px;
   }
   .works__sd .works__text-small {
-    margin-top: 18px;
-    padding-top: 19px;
+    height: 57px;
+    margin: 0 0 0 20px;
+    padding: 0;
   }
   .works__sd .works__text-large {
     width: 196px;
     height: 29px;
-    margin-top: 2px;
+    margin: 0 0 23px 20px;
   }
   .works__th .works__step {
-    padding: 5px 0 0 13px;
+    width: 58px;
+    padding: 5px 0 0 12px;
+  }
+  .works__fs .works__step, .works__th .works__step {
+    margin: 0 0 31px 20px;
   }
   .works__fs .works__text-large, .works__th .works__text-large {
-    margin-top: 22px;
-    padding-top: 24px;
+    margin: 0 0 0 20px;
+    padding: 15px 0 0 0;
   }
   .works__fs .works__text-small, .works__th .works__text-small {
-    margin-top: 19px;
+    margin: 0 0 1px 20px;
   }
   .box-partners {
     padding-top: 94px;
@@ -865,24 +874,23 @@ footer {
   .partner {
     display: flex;
     align-items: center;
-    align-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
     padding: 26px 0 0 0;
     margin: 0;
-    gap: 35px 19px;
   }
   .partner__fs, .partner__sd {
     width: 236px;
     height: 205px;
-    margin-top: 0;
-    padding-right: 1px;
+    margin: 0;
+    padding: 0 0 0 0;
   }
   .partner__fs .name, .partner__sd .name {
-    margin-top: 19px;
+    margin: 18px 0 22px 0;
+    padding: 0;
   }
   .partner__fs .discribe, .partner__sd .discribe {
-    margin-top: 22px;
+    margin: 0 0 0 1px;
     width: 236px;
     height: 38px;
     text-align: center;
@@ -890,43 +898,40 @@ footer {
   .partner__th, .partner__fr {
     width: 236px;
     height: 224px;
-    margin-top: 0;
+    margin: 0;
+    padding: 20px 0 0 0;
   }
   .partner__th .name, .partner__fr .name {
-    margin-top: 19px;
-    padding-left: 2px;
+    margin: 0;
+    padding: 0;
   }
   .partner__th .discribe, .partner__fr .discribe {
-    margin-top: 0;
     width: 236px;
     height: 57px;
     text-align: center;
-    margin-top: 2px;
-    padding-top: 20px;
-    padding-left: 1px;
+    margin: 0;
+    padding: 0;
   }
   .partner__fs {
-    margin-left: 0;
-    margin-right: 0;
     order: 1;
   }
   .partner__fs .avatar {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
   }
   .partner__sd {
-    margin-right: 0;
     order: 3;
   }
   .partner__sd .avatar {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
   }
   .partner__th {
-    margin-right: 0;
     order: 2;
   }
   .partner__th .discribe {
-    margin-left: 0;
-    padding-top: 25px;
+    margin: 0;
+    padding: 0;
   }
   .partner__fr {
     order: 4;
@@ -1002,15 +1007,17 @@ footer {
   }
   footer {
     width: 768px;
+  }
+  .foot {
     height: 244px;
     padding: 34px 0 0 39px;
     gap: 50px;
   }
-  footer .discribe {
+  .foot .discribe {
     width: 114px;
     margin-left: 58px;
   }
-  footer .discribe a {
+  .foot .discribe a {
     height: 26px;
     text-align: start;
   }
@@ -1032,12 +1039,12 @@ footer {
     height: 540px;
     background-image: url(../image/Background1.png);
     background-repeat: no-repeat;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 10px;
   }
   .logo {
     align-self: center;
     padding-top: 97px;
-    padding-left: 13px;
+    padding-left: 4px;
   }
   .container {
     display: flex;
@@ -1050,7 +1057,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    padding-right: 68px;
+    padding-right: 73px;
   }
   .autorization__log_in {
     padding: 2px 10px 0 0;
@@ -1058,14 +1065,14 @@ footer {
   }
   .autorization__sing_up {
     margin: 0 0 0 0;
-    padding: 1px 0 0 16px;
+    padding: 1px 0 0 0;
   }
   .head-text {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 7px 0 0 8px;
+    padding: 7px 0 0 0;
   }
   .head-text__large {
     width: 272px;
@@ -1075,15 +1082,15 @@ footer {
     width: 280px;
     height: 49px;
     font-size: 18px;
-    padding: 5px 0 0 1px;
+    padding: 5px 0 0 0;
     text-align: center;
   }
   .head-text__button {
     width: 280px;
     height: 40px;
     font-size: 14px;
-    margin: 20px 0 0 3px;
-    padding: 1px 0 0 1px;
+    margin: 15px 0 0 2px;
+    padding: 1px 0 0 0;
   }
   main {
     width: 320px;
@@ -1092,6 +1099,9 @@ footer {
   .box-works {
     margin: 0 auto;
     padding-top: 34px;
+  }
+  .box-works .title {
+    font-size: 22px;
   }
   .works {
     display: flex;
@@ -1107,7 +1117,6 @@ footer {
     border-radius: 4px;
   }
   .works__fs__gradient, .works__sd__gradient, .works__th__gradient {
-    padding: 0 0 5px 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1116,6 +1125,7 @@ footer {
     padding: 5px 0 0 14px;
   }
   .works__text-large {
+    height: 48px;
     line-height: 14px;
   }
   .works__text-small {
@@ -1124,39 +1134,47 @@ footer {
     font-size: 14px;
     line-height: 14px;
   }
+  .works__fs .works__step, .works__th .works__step {
+    padding: 5px 0 0 12px;
+    margin: 0px 0 0 20px;
+  }
+  .works__fs .works__text-large, .works__th .works__text-large {
+    margin-top: 46px;
+    margin-left: 20px;
+  }
+  .works__fs .works__text-small, .works__th .works__text-small {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
   .works__fs {
     background-image: url(../image/Object1_1.png);
+  }
+  .works__fs .works__step {
+    padding: 5px 0 0 14px;
   }
   .works__sd {
     background-image: url(../image/Object2_2.png);
   }
   .works__sd .works__step {
     padding: 5px 0 0 12px;
+    margin-left: 20px;
   }
   .works__sd .works__text-large {
     width: 250px;
     height: 29px;
-    margin-top: 16px;
-    padding-top: 14px;
+    margin: 30px 0 0 20px;
+    padding: 0;
   }
   .works__sd .works__text-small {
-    padding: 5px 0 0 0;
-    margin-top: 18px;
+    margin: 9px 0 0 20px;
+    padding: 0 0 0 0;
   }
   .works__th {
     background-image: url(../image/Object3_3.png);
   }
   .works__th__gradient {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-  }
-  .works__th .works__step {
-    padding: 5px 0 0 12px;
-  }
-  .works__fs .works__text-large, .works__th .works__text-large {
-    margin-top: 22px;
-  }
-  .works__fs .works__text-small, .works__th .works__text-small {
-    margin-top: 14px;
   }
   .box-partners {
     padding-top: 36px;
@@ -1171,13 +1189,14 @@ footer {
     height: 54px;
     padding: 0;
     margin: 0;
+    font-size: 22px;
   }
   .box-partners button {
     width: 280px;
     height: 40px;
     margin-top: 16px;
     margin-left: 0;
-    padding-left: 5px;
+    padding-left: 11px;
     padding-top: 2px;
   }
   .partner {
@@ -1185,15 +1204,21 @@ footer {
     gap: 0;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   .partner__fs, .partner__sd {
-    margin-top: 16px;
+    margin: 16px 0 0 0;
   }
   .partner__fs .name, .partner__sd .name {
-    margin-top: 19px;
+    margin-top: 18px;
+    padding: 0;
   }
   .partner__fs .discribe, .partner__sd .discribe {
-    margin-top: 23px;
+    margin: 0;
+    margin-top: 22px;
+    width: 236px;
+    height: 38px;
+    padding: 0;
   }
   .partner__th, .partner__fr {
     width: 221px;
@@ -1201,18 +1226,28 @@ footer {
     margin-top: 14px;
   }
   .partner__th .name, .partner__fr .name {
-    margin-top: 19px;
+    margin-top: 18px;
+    padding: 0;
   }
   .partner__th .discribe, .partner__fr .discribe {
     margin-top: 22px;
+    margin-left: 1px;
+    width: 236px;
+    height: 57px;
   }
   .partner__fs {
+    order: 1;
     margin-right: 0;
+    padding: 0;
   }
   .partner__fs .avatar {
     margin-left: 0;
   }
+  .partner__fs .discribe {
+    padding-bottom: 1px;
+  }
   .partner__sd {
+    order: 3;
     margin-right: 0;
   }
   .partner__sd .avatar {
@@ -1224,8 +1259,10 @@ footer {
   }
   .partner__sd .discribe {
     margin-top: 22px;
+    padding-bottom: 0;
   }
   .partner__th {
+    order: 2;
     margin-right: 1px;
   }
   .partner__th .back__icon {
@@ -1236,6 +1273,7 @@ footer {
     padding: 5px 0 0 0;
   }
   .partner__fr {
+    order: 4;
     margin-top: 15px;
   }
   .partner__fr .avatar {
@@ -1264,9 +1302,11 @@ footer {
     justify-content: center;
   }
   .box-holidays .title {
+    padding: 0;
     width: 280px;
     height: 54px;
     text-align: center;
+    font-size: 22px;
   }
   .holiday {
     display: flex;
@@ -1281,6 +1321,11 @@ footer {
   }
   .holiday__fs {
     background-image: url(../image/holiday1_11.png);
+  }
+  .holiday__fs .holiday__text {
+    width: 206px;
+    height: 27px;
+    margin-bottom: 53px;
   }
   .holiday__sd {
     background-image: url(../image/holiday2_22.png);
@@ -1304,19 +1349,25 @@ footer {
   .holiday__sv {
     background-image: url(../image/holiday7_77.png);
   }
+  .opasity {
+    padding: 0;
+  }
   .create-holiday {
     width: 100%;
     height: 100%;
     margin-top: 35px;
   }
   .create-holiday .title {
+    align-self: center;
     width: 230px;
     margin: 0;
+    font-size: 22px;
+    padding-right: 0px;
   }
   .discribe-small {
     width: 100%;
     height: 24px;
-    padding-left: 2px;
+    padding-left: 1px;
     margin-top: 19px;
   }
   .search {
@@ -1327,19 +1378,22 @@ footer {
     margin-top: 4px;
   }
   .search__term {
-    width: 280px;
-    height: 40px;
-    margin: 0 0 0 0;
-    padding: 4px 14px 0 14px;
+    width: 263px;
+    height: 29px;
+    margin: 0px 0 0 20px;
+    padding: 7px 1px 2px 14px;
+    align-self: flex-start;
   }
   .search__button {
     width: 280px;
     height: 40px;
-    margin: 10px 0 0 0;
-    padding: 1px 0 0 12px;
+    margin: 10px 0 0px 1px;
+    padding: 1px 0 0 11px;
   }
   footer {
     width: 320px;
+  }
+  .foot {
     height: 226px;
     margin-top: 40px;
     display: flex;
@@ -1348,18 +1402,18 @@ footer {
     padding: 20px 0 0 0;
     gap: 0;
   }
-  footer .logo {
+  .foot .logo {
     padding: 0 0 0 1px;
   }
-  footer .discribe {
+  .foot .discribe {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 0;
+    margin-left: 1px;
     margin-top: 9px;
   }
-  footer .discribe__company {
+  .foot .discribe__company {
     color: #444;
     font-family: "Montserrat-Bold";
     font-size: 14px;
@@ -1367,7 +1421,7 @@ footer {
     padding-bottom: 0;
     height: 17px;
   }
-  footer .discribe__all {
+  .foot .discribe__all {
     width: 280px;
     display: flex;
     flex-direction: row;

@@ -574,7 +574,8 @@ main {
     flex-direction: column;
     justify-content: end;
     margin-top: 89px;
-    .title{
+
+    .title {
         padding-right: 1.5px;
     }
 
@@ -778,6 +779,7 @@ footer {
         gap: 20px;
         padding-top: 35px;
 
+
         div {
             width: 236px;
 
@@ -786,8 +788,10 @@ footer {
         &__fs,
         &__sd,
         &__th {
+            align-items: flex-end;
+
             &__gradient {
-                padding: 0 0 0 20px;
+                padding: 0 0 0 0;
             }
         }
 
@@ -804,8 +808,8 @@ footer {
 
         &__text-small {
             width: 196px;
-            height: 76px;
-            padding-top: 5px;
+            height: 70px;
+            padding: 0;
         }
 
 
@@ -813,20 +817,22 @@ footer {
         &__sd {
 
             .works__step {
-                padding: 5px 0 0 13px;
+                padding: 5px 0 0 12px;
+                margin: 0px 0 16px 20px;
 
             }
 
             .works__text-small {
-                margin-top: 18px;
-                padding-top: 19px;
+                height: 57px;
+                margin: 0 0 0 20px;
+                padding: 0;
             }
 
 
             .works__text-large {
                 width: 196px;
                 height: 29px;
-                margin-top: 2px;
+                margin: 0 0 23px 20px;
             }
         }
 
@@ -834,21 +840,25 @@ footer {
 
 
             .works__step {
-                padding: 5px 0 0 13px;
+                width: 58px;
+                padding: 5px 0 0 12px;
             }
 
         }
 
         &__fs,
         &__th {
+            .works__step {
+                margin: 0 0 31px 20px;
+            }
 
             .works__text-large {
-                margin-top: 22px;
-                padding-top: 24px;
+                margin: 0 0 0 20px;
+                padding: 15px 0 0 0;
             }
 
             .works__text-small {
-                margin-top: 19px;
+                margin: 0 0 1px 20px;
             }
 
         }
@@ -876,87 +886,87 @@ footer {
     .partner {
         display: flex;
         align-items: center;
-        align-content: flex-start;
+        // align-content: flex-start;
         flex-wrap: wrap;
         width: 100%;
         padding: 26px 0 0 0;
         margin: 0;
-        gap: 35px 19px;
+        // gap: 35px 19px ;
 
 
         &__fs,
         &__sd {
             width: 236px;
             height: 205px;
-            margin-top: 0;
-            padding-right: 1px;
+            margin: 0;
+            padding: 0 0 0 0;
 
             .name {
-                margin-top: 19px;
+                margin: 18px 0 22px 0;
+                padding: 0;
 
             }
 
             .discribe {
-                margin-top: 22px;
+                margin: 0 0 0 1px;
                 width: 236px;
                 height: 38px;
                 text-align: center;
             }
+
         }
 
         &__th,
         &__fr {
             width: 236px;
             height: 224px;
-            margin-top: 0;
+            margin: 0;
+            padding: 20px 0 0 0;
 
             .name {
-                margin-top: 19px;
-                padding-left: 2px;
+                margin: 0;
+                padding: 0;
+
             }
 
             .discribe {
-                margin-top: 0;
                 width: 236px;
                 height: 57px;
                 text-align: center;
-                margin-top: 2px;
-                padding-top: 20px;
-                padding-left: 1px;
+                margin: 0;
+                padding: 0;
 
             }
 
         }
 
         &__fs {
-            margin-left: 0;
-            margin-right: 0;
             order: 1;
 
             .avatar {
-                margin-left: 0;
+                margin: 0;
+                padding: 0;
 
             }
         }
 
         &__sd {
-            margin-right: 0;
             order: 3;
 
             .avatar {
-                margin-left: 0;
+                margin: 0;
+                padding: 0;
 
             }
         }
 
 
         &__th {
-            margin-right: 0;
             order: 2;
 
             .discribe {
-                margin-left: 0;
-                padding-top: 25px;
+                margin: 0;
+                padding: 0;
             }
         }
 
@@ -1077,10 +1087,13 @@ footer {
 
     footer {
         width: 768px;
+
+    }
+
+    .foot {
         height: 244px;
         padding: 34px 0 0 39px;
         gap: 50px;
-
 
         .discribe {
             width: 114px;
@@ -1092,6 +1105,7 @@ footer {
             }
         }
     }
+
 
     .partners {
         color: #444;
@@ -1120,13 +1134,13 @@ footer {
         height: 540px;
         background-image: url(../image/Background1.png);
         background-repeat: no-repeat;
-        margin: 0 0 0 5px;
+        margin: 0 0 0 10px;
     }
 
     .logo {
         align-self: center;
         padding-top: 97px;
-        padding-left: 13px;
+        padding-left: 4px;
     }
 
     .container {
@@ -1141,7 +1155,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         gap: 10px;
-        padding-right: 68px;
+        padding-right: 73px;
 
         &__log_in {
             padding: 2px 10px 0 0;
@@ -1150,7 +1164,7 @@ footer {
 
         &__sing_up {
             margin: 0 0 0 0;
-            padding: 1px 0 0 16px;
+            padding: 1px 0 0 0;
 
         }
     }
@@ -1160,7 +1174,7 @@ footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 7px 0 0 8px;
+        padding: 7px 0 0 0;
 
         &__large {
             width: 272px;
@@ -1171,7 +1185,7 @@ footer {
             width: 280px;
             height: 49px;
             font-size: 18px;
-            padding: 5px 0 0 1px;
+            padding: 5px 0 0 0;
             text-align: center;
 
         }
@@ -1180,8 +1194,8 @@ footer {
             width: 280px;
             height: 40px;
             font-size: 14px;
-            margin: 20px 0 0 3px;
-            padding: 1px 0 0 1px;
+            margin: 15px 0 0 2px;
+            padding: 1px 0 0 0;
 
         }
 
@@ -1195,6 +1209,10 @@ footer {
     .box-works {
         margin: 0 auto;
         padding-top: 34px;
+
+        .title {
+            font-size: 22px
+        }
     }
 
     .works {
@@ -1218,7 +1236,7 @@ footer {
         &__sd,
         &__th {
             &__gradient {
-                padding: 0 0 5px 20px;
+                // padding: 0 0 5px 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -1230,7 +1248,7 @@ footer {
         }
 
         &__text-large {
-
+            height: 48px;
             line-height: 14px;
         }
 
@@ -1241,8 +1259,33 @@ footer {
             line-height: 14px;
         }
 
+        &__fs,
+        &__th {
+            .works__step {
+                padding: 5px 0 0 12px;
+                margin: 0px 0 0 20px;
+            }
+
+            .works__text-large {
+                margin-top: 46px;
+                margin-left: 20px;
+            }
+
+            .works__text-small {
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-bottom: 0px;
+            }
+
+        }
+
         &__fs {
             background-image: url(../image/Object1_1.png);
+
+            .works__step {
+                padding: 5px 0 0 14px;
+            }
+
         }
 
         &__sd {
@@ -1251,18 +1294,20 @@ footer {
 
             .works__step {
                 padding: 5px 0 0 12px;
+                margin-left: 20px;
             }
 
             .works__text-large {
                 width: 250px;
                 height: 29px;
-                margin-top: 16px;
-                padding-top: 14px;
+                margin: 30px 0 0 20px;
+                padding: 0;
             }
 
             .works__text-small {
-                padding: 5px 0 0 0;
-                margin-top: 18px;
+                margin: 9px 0 0 20px;
+                padding: 0 0 0 0;
+
             }
 
         }
@@ -1274,24 +1319,9 @@ footer {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 100%);
             }
 
-            .works__step {
-                padding: 5px 0 0 12px;
-            }
-
         }
 
-        &__fs,
-        &__th {
 
-            .works__text-large {
-                margin-top: 22px;
-            }
-
-            .works__text-small {
-                margin-top: 14px;
-            }
-
-        }
 
     }
 
@@ -1308,6 +1338,7 @@ footer {
             height: 54px;
             padding: 0;
             margin: 0;
+            font-size: 22px;
 
         }
 
@@ -1316,7 +1347,7 @@ footer {
             height: 40px;
             margin-top: 16px;
             margin-left: 0;
-            padding-left: 5px;
+            padding-left: 11px;
             padding-top: 2px;
 
         }
@@ -1327,17 +1358,24 @@ footer {
         gap: 0;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
 
         &__fs,
         &__sd {
-            margin-top: 16px;
+            margin: 16px 0 0 0;
+
 
             .name {
-                margin-top: 19px;
+                margin-top: 18px;
+                padding: 0;
             }
 
             .discribe {
-                margin-top: 23px;
+                margin: 0;
+                margin-top: 22px;
+                width: 236px;
+                height: 38px;
+                padding: 0;
             }
         }
 
@@ -1348,23 +1386,34 @@ footer {
             margin-top: 14px;
 
             .name {
-                margin-top: 19px;
+                margin-top: 18px;
+                padding: 0;
             }
 
             .discribe {
                 margin-top: 22px;
+                margin-left: 1px;
+                width: 236px;
+                height: 57px;
             }
         }
 
         &__fs {
+            order: 1;
             margin-right: 0;
+            padding: 0;
 
             .avatar {
                 margin-left: 0;
             }
+
+            .discribe {
+                padding-bottom: 1px;
+            }
         }
 
         &__sd {
+            order: 3;
             margin-right: 0;
 
             .avatar {
@@ -1382,11 +1431,13 @@ footer {
 
             .discribe {
                 margin-top: 22px;
+                padding-bottom: 0;
 
             }
         }
 
         &__th {
+            order: 2;
             margin-right: 1px;
 
             .back {
@@ -1403,6 +1454,7 @@ footer {
         }
 
         &__fr {
+            order: 4;
             margin-top: 15px;
 
             .avatar {
@@ -1440,9 +1492,12 @@ footer {
         justify-content: center;
 
         .title {
+            padding: 0;
             width: 280px;
             height: 54px;
             text-align: center;
+            font-size: 22px;
+
         }
     }
 
@@ -1468,6 +1523,12 @@ footer {
 
         &__fs {
             background-image: url(../image/holiday1_11.png);
+
+            .holiday__text {
+                width: 206px;
+                height: 27px;
+                margin-bottom: 53px;
+            }
         }
 
         &__sd {
@@ -1501,14 +1562,23 @@ footer {
 
     }
 
+    .opasity {
+        padding: 0;
+    }
+
     .create-holiday {
         width: 100%;
         height: 100%;
         margin-top: 35px;
 
+
+
         .title {
+            align-self: center;
             width: 230px;
             margin: 0;
+            font-size: 22px;
+            padding-right: 0px;
         }
 
     }
@@ -1516,7 +1586,7 @@ footer {
     .discribe-small {
         width: 100%;
         height: 24px;
-        padding-left: 2px;
+        padding-left: 1px;
         margin-top: 19px;
 
     }
@@ -1529,30 +1599,33 @@ footer {
         margin-top: 4px;
 
         &__term {
-            width: 280px;
-            height: 40px;
-            margin: 0 0 0 0;
-            padding: 4px 14px 0 14px;
+            width: 263px;
+            height: 29px;
+            margin: 0px 0 0 20px;
+            padding: 7px 1px 2px 14px;
+            align-self: flex-start;
 
         }
 
         &__button {
             width: 280px;
             height: 40px;
-            margin: 10px 0 0 0;
-            padding: 1px 0 0 12px;
+            margin: 10px 0 0px 1px;
+            padding: 1px 0 0 11px;
 
         }
     }
 
     footer {
         width: 320px;
+    }
+
+    .foot {
         height: 226px;
         margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: center;
         padding: 20px 0 0 0;
         gap: 0;
 
@@ -1565,7 +1638,7 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-left: 0;
+            margin-left: 1px;
             margin-top: 9px;
 
 
