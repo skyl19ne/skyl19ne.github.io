@@ -190,22 +190,26 @@ body {
 }
 
 header {
+  margin: 0 auto;
+}
+
+.head {
   background-image: url(../image/Background.png);
   width: 1440px;
   height: 700px;
   color: #FFF;
   margin: 0 auto;
 }
-header a:link {
+.head a:link {
   color: #FFF;
 }
-header a:visited {
+.head a:visited {
   color: #FFF;
 }
-header a:hover {
+.head a:hover {
   color: #FFF;
 }
-header a:active {
+.head a:active {
   color: #FFF;
 }
 
@@ -777,6 +781,9 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   header {
+    margin: 0 auto;
+  }
+  .head {
     background-image: url(../image/Background.png);
     width: 768px;
     background-position: center;
@@ -866,10 +873,10 @@ footer {
     padding-right: 1px;
   }
   .box-partners button {
-    margin-top: 30px;
+    margin-top: 21px;
     margin-left: 0;
     width: 180px;
-    padding-left: 5px;
+    padding-left: 11px;
   }
   .partner {
     display: flex;
@@ -878,19 +885,20 @@ footer {
     width: 100%;
     padding: 26px 0 0 0;
     margin: 0;
+    row-gap: 19px;
   }
   .partner__fs, .partner__sd {
     width: 236px;
     height: 205px;
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 14px 0 0 0;
   }
   .partner__fs .name, .partner__sd .name {
     margin: 18px 0 22px 0;
     padding: 0;
   }
   .partner__fs .discribe, .partner__sd .discribe {
-    margin: 0 0 0 1px;
+    margin: 0 0px 12px 1px;
     width: 236px;
     height: 38px;
     text-align: center;
@@ -899,17 +907,20 @@ footer {
     width: 236px;
     height: 224px;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 20px;
+  }
+  .partner__th .avatar, .partner__fr .avatar {
+    margin: 0 0 0 0;
   }
   .partner__th .name, .partner__fr .name {
-    margin: 0;
-    padding: 0;
+    margin: 17px 0 0 0;
+    padding: 1px 0 0 0;
   }
   .partner__th .discribe, .partner__fr .discribe {
     width: 236px;
     height: 57px;
     text-align: center;
-    margin: 0;
+    margin: 27px 0 0 0;
     padding: 0;
   }
   .partner__fs {
@@ -921,6 +932,7 @@ footer {
   }
   .partner__sd {
     order: 3;
+    padding: 21px 0 0 0;
   }
   .partner__sd .avatar {
     margin: 0;
@@ -930,11 +942,15 @@ footer {
     order: 2;
   }
   .partner__th .discribe {
-    margin: 0;
-    padding: 0;
+    padding: 5px 0 0px 0;
+    margin: 22px 0 0 0;
   }
   .partner__fr {
+    padding: 15px 0 0 20px;
     order: 4;
+  }
+  .partner__fr .discribe {
+    margin: 22px 0 0 0;
   }
   .box-holidays {
     width: 748px;
@@ -992,6 +1008,7 @@ footer {
   }
   .create-holiday {
     padding-left: 1px;
+    margin-top: 94px;
   }
   .create-holiday .title {
     padding: 0;
@@ -1002,14 +1019,14 @@ footer {
   .search__button {
     width: 172.98px;
     height: 40px;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 px;
     padding: 2px 0 0 4.5px;
   }
   footer {
     width: 768px;
   }
   .foot {
-    height: 244px;
+    height: 208px;
     padding: 34px 0 0 39px;
     gap: 50px;
   }
@@ -1036,7 +1053,11 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header {
     width: 320px;
+    margin: 0 auto;
+  }
+  .head {
     height: 540px;
+    width: 320px;
     background-image: url(../image/Background1.png);
     background-repeat: no-repeat;
     margin: 0 0 0 10px;
@@ -1394,7 +1415,7 @@ footer {
     width: 320px;
   }
   .foot {
-    height: 226px;
+    height: 204px;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
